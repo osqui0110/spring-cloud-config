@@ -1,0 +1,4 @@
+aws:
+  sqs:
+    preprocessing_queue: test-preprocess-queue
+    parsing_queue: test-parser-queue
