@@ -1,0 +1,17 @@
+cloud:
+  aws:
+    credentials:
+      use-default-aws-credentials-chain: true
+    region:
+      auto: true
+      static: ${AWS_DEFAULT_REGION}
+    stack:
+      auto: false
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+        internal:
+          InstanceMetadataServiceResourceFetcher: error
