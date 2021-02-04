@@ -1,0 +1,24 @@
+cloud:
+  aws:
+    credentials:
+      use-default-aws-credentials-chain: true
+    region:
+      auto: true
+      static: us-west-2
+    stack:
+      auto: false
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+        internal:
+          InstanceMetadataServiceResourceFetcher: error
+
+aws:
+  sqs:
+    preprocessing_queue: test-preprocess-queue
+aws:
+  sqs:
+    parsing_queue: test-parser-queue
