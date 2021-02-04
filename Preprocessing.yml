@@ -1,3 +1,6 @@
+server:
+  port: 8080
+
 cloud:
   aws:
     credentials:
@@ -7,6 +10,7 @@ cloud:
       static: us-west-2
     stack:
       auto: false
+      
 logging:
   level:
     com:
@@ -19,6 +23,4 @@ logging:
 aws:
   sqs:
     preprocessing_queue: test-preprocess-queue
-aws:
-  sqs:
     parsing_queue: test-parser-queue
