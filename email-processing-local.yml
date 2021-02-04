@@ -10,7 +10,7 @@ cloud:
       static: us-west-2
     stack:
       auto: false
-      
+
 logging:
   level:
     com:
@@ -24,3 +24,5 @@ aws:
   sqs:
     preprocessing_queue: test-preprocess-queue
     parsing_queue: test-parser-queue
+  s3:
+    email_bucket: test-local-s3
